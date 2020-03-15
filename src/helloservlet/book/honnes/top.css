@@ -1,0 +1,31 @@
+p{
+  color: white;
+
+}
+
+.top-logo{
+  font-weight: 200;
+  font-size: 80px;
+  color: azure;
+  text-align: center;
+}
+
+.form{
+  color:red;
+  font-size: 20px;
+  height:150px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.top{
+  background-image: url(img/c.jpg);
+  height:1000px;
+  position: relative;
+}
+
+.top-img{
+  z-index:10;
+  position: absolute;
+  margin-left: 40px;
+}
