@@ -8,24 +8,112 @@ p{
   font-size: 80px;
   color: azure;
   text-align: center;
+  font-family:
 }
 
-.form{
-  color:red;
+.search-book{
   font-size: 20px;
-  height:150px;
+  height:50px;
   appearance: none;
   -webkit-appearance: none;
+  border-radius: 10px;
 }
 
-.top{
-  background-image: url(img/c.jpg);
-  height:1000px;
+.search-input{
+  height:50px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.7);
+  font-size: 30px;
+}
+
+.search-wrap{
+  text-align: center;
+  
+}
+
+.top-wrap{
+  background-image: url(img/library-2507902_1920.jpg);
   position: relative;
+  background-size: cover;
+  background-position: center center; 
+
+}
+.top-wrap-shadow{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-color: rgba(0,0,0,.5);
+  z-index:0;
+}
+
+.top-wrap-contents{
+  position: relative;
+  z-index:1;
 }
 
 .top-img{
   z-index:10;
   position: absolute;
   margin-left: 40px;
+  right:0;
+
+}
+
+.favorite-wrap{
+  background-color:#e8dbc8;
+
+}
+.book-img-wrap{
+  text-align: center;
+}
+.book-img{
+  background-size: cover;
+  background-position: center center; 
+  width: 40%;
+height: 40%;
+margin:30px;
+}
+.favorite-logo{
+  font-size: 40px;
+  text-align: center;
+  
+  
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1b2538;
+}
+li {
+	float: left;
+  border-right: 1px solid #bbbbbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+  text-decoration: none;
+
+ 
+}
+li a:hover:not(.active) {
+  background-color: #a9bce2;
+ 
+}
+.active {
+  background-color: #da3c41;
+  
+}
+
+.menu-bar{
 }
