@@ -146,3 +146,7 @@
 .logout-item a{
 text-decoration: none;
 }
+
+header{
+  background-color: #fff;
+}
