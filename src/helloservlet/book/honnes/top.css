@@ -189,11 +189,6 @@ h1::after {
   margin: 0 auto;
 }
 
-
-
-.pick-up-img-wrap img{
-
-}
 .book-cover {
   border-radius: 10px;
   padding: 15px;
@@ -208,17 +203,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -279,3 +263,34 @@ text-decoration: none;
 .login-table {
   margin: 0 auto;
 }
+
+.footer-wrap{
+	background-color:#3d3a39;
+  height:120px;
+  
+
+}
+.footer-line{
+  height: 50px;
+    margin: 40px;
+    padding: 70px;
+    border-image: url(img/footer-bottom.png);
+    border: 0px none;
+  border-image-repeat: space;
+}
+
+.icon{
+  width:200 px;
+    font-size: 20px;
+    color: #989898;
+    margin:10px;
+    padding:10px;
+    height:64px;
+
+}
+
+.fas{
+  margin-right: 5px;;
+}
+
+
