@@ -1,46 +1,26 @@
+/* ヘッダー*/
+
+header{
+  background-color: #fff;
+}
+
 .header-img{
   width: 150px;
   height:auto;
 }
 
-.top-title{
-  font-weight: 200;
-  font-size: 80px;
-  color: azure;
-  text-align: center;
-  font-family: 'Viaoda Libre', cursive;
-  font-family: 'Noticia Text', serif;
+.contents {
+  min-height: 100vh;
 }
 
-.search-book{
-  font-size: 20px;
-  height:50px;
-  appearance: none;
-  -webkit-appearance: none;
-  border-radius: 10px;
-}
-
-.search-input{
-  height:50px;
-  width: 40%;
-  border-radius: 10px;
-  background-color: rgba(255,255,255,.7);
-  font-size: 20px;
-  margin-bottom: 100px;
-}
-
-.search-wrap{
-  text-align: center;
-  
-}
-
+/*title*/
 .top-wrap{
   background-image: url(img/library-2507902_1920.jpg);
   position: relative;
   background-size: cover;
   background-position: center center; 
-
 }
+
 .top-wrap-shadow{
   position: absolute;
   top:0;
@@ -62,34 +42,53 @@
   text-align: center;
 }
 
-.top-img{
-  z-index:10;
-  position: absolute;
-  margin-left: 40px;
-  right:0;
-
+.top-title{
+  font-weight: 200;
+  font-size: 120px;
+  color: azure;
+  text-align: center;
+  font-family: 'Rochester', cursive;
 }
 
-.favorite-wrap{
-  background-color:#e8dbc8;
-  clear: both;
-}
+/*book-search*/
 
-.book-img-wrap{
+.search-wrap{
   text-align: center;
 }
-.book-img{
-  background-size: cover;
-  background-position: center center; 
-  width: 15%;
-  height: 20%;
-  margin:30px;
+
+.search-select{
+	color:white;
+	display:flex;
+  justify-content:center;
 }
-.favorite-logo{
-  font-size: 40px;
-  text-align: center;
-  padding-top:40px;
-  margin-top:0;
+
+.book-search-input{
+  height:50px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.7);
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.book-search-btn{
+  font-size: 20px;
+  height:50px;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 10px;
+}
+
+/* メニュー*/
+
+.menu-wrap{
+  height:100px;
+  background-color: #e8dbc8;
+}
+
+.menu-bar{
+	display:flex;
+  justify-content:space-between;
 }
 
 .btn{
@@ -104,49 +103,179 @@
   margin:20px;
   background-color: #da3c41;
   transition: background-color .3s ease-in;
+  width:200px;
   height:60px;
-  width: 13%;
 }
 
 .btn:hover {
   border: none;
-  background: rgba(0,0,0,0.4);
   background:#f08080;
   padding:20px 20px; #000;
-  color:#1b1b1b;
+}
+
+/* 全てのページ背景*/
+.all-wrap{
+  overflow: hidden;
+  background-color: #e8dbc8;
+  width:100%;
+  position: relative;
+}
+
+/* h1::before {
+  content: "~ ";
+}
+
+h1::after {
+  content: "~ ";
+} */
+
+.all-wrap::before {
+  display: block;
+  position: absolute;
+  background-image: url(img/main-side.png);
+  background-size: cover;
+  content: "";
+  width: 200px;
+  height: 200px;
+  left:0;
+  top:50px;
+}
+
+.all-wrap::after {
+  display: block;
+  position: absolute;
+  background-image: url(img/right.png);
+  background-size: cover;
+  content: "";
+  width: 200px;
+  height: 200px;
+  right:0;
+  top: 50px;
+}
+
+.all-wrap-inner {
+  position: relative;
+  z-index: 1;
+  min-height: 256px;
 }
 
 .side-bar-left{
-  float:left;
+  position: absolute;
   width: 20%;
   height: auto;
-  margin-top:50px;
+  left:0;
+  top:50px;
 }
 
 .side-bar-right{
-  float:right;
+  position: absolute;
   width: 20%;
   height: auto;
-  margin-top:50px;
+  right:0;
+  top:50px;
 }
 
-.menu-wrap{
-  height:100px;
-  background-color: #e8dbc8;
+.all-wrap p,h1{
+  padding:10px;
+  text-align: center;
 }
+
+/* pick up */
+
+.pick-up-img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.pick-up-img-wrap img{
+
+}
+.book-cover {
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  width: 33.333333%;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .logout-item{
   float:right;
-  padding-top:20px;
 }
+
 .logout-item img{
   width:30px;
   height:auto;
 }
+
 .logout-item a{
 text-decoration: none;
 }
 
-header{
-  background-color: #fff;
+
+
+.search-select{
+	color:white;
+	display:flex;
+    justify-content:center;
+}
+
+.aa{
+  text-align:center; 
+  vertical-align:middle;
+}
+
+.footer-wrap{
+	background-color:#3d3a39;
+	display:flex;
+	height:120px;
+}
+
+.footer-btn{
+	border: 1px solid #464646;
+	width: 160px;
+    font-size: 13px;
+    color: #989898;
+    margin:10px;
+    padding:10px;
+    height:64px;
+}
+
+.submit {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  line-height: 20px;
+  background-color: red;
+  color: #FFF;
+}
+
+
+.login-table {
+  margin: 0 auto;
 }
