@@ -2,18 +2,33 @@
 
 header{
   background-color: #fff;
+  display:flex;
+  height:64px;
+  position: relative;
+}
+
+.header-btn{
+  width:100px;
+  font-size: 20px;
+  color: #989898;
+  height:50px;
+  padding:10px;
+  position: absolute;
+  right:0;
+  z-index:1;
+  margin:5px;
+  
 }
 
 .header-img{
   width: 150px;
-  height:auto;
-}
-
-.contents {
-  min-height: 100vh;
+  height:64px;
+  left:0;
+  top:0;
 }
 
 /*title*/
+
 .top-wrap{
   background-image: url(img/library-2507902_1920.jpg);
   position: relative;
@@ -50,6 +65,10 @@ header{
   font-family: 'Rochester', cursive;
 }
 
+.top-span{
+  color:red;
+}
+
 /*book-search*/
 
 .search-wrap{
@@ -58,7 +77,7 @@ header{
 
 .search-select{
 	color:white;
-	display:flex;
+  display:flex;
   justify-content:center;
 }
 
@@ -114,22 +133,14 @@ header{
 }
 
 /* 全てのページ背景*/
-.all-wrap{
+.main-wrap{
   overflow: hidden;
   background-color: #e8dbc8;
   width:100%;
   position: relative;
 }
 
-/* h1::before {
-  content: "~ ";
-}
-
-h1::after {
-  content: "~ ";
-} */
-
-.all-wrap::before {
+.main-wrap::before {
   display: block;
   position: absolute;
   background-image: url(img/main-side.png);
@@ -141,7 +152,7 @@ h1::after {
   top:50px;
 }
 
-.all-wrap::after {
+.main-wrap::after {
   display: block;
   position: absolute;
   background-image: url(img/right.png);
@@ -153,12 +164,12 @@ h1::after {
   top: 50px;
 }
 
-.all-wrap-inner {
+.main-wrap-inner {
   position: relative;
   z-index: 1;
   min-height: 256px;
 }
-
+/*
 .side-bar-left{
   position: absolute;
   width: 20%;
@@ -174,9 +185,9 @@ h1::after {
   right:0;
   top:50px;
 }
-
-.all-wrap p,h1{
-  padding:10px;
+*/
+.main-wrap p,h1,h2{
+  padding:20px;
   text-align: center;
 }
 
@@ -204,32 +215,99 @@ img {
   height: auto;
 }
 
+/* footer */
 
-
-.logout-item{
-  float:right;
+.footer-wrap{
+	background-color:#3d3a39;
+	display:flex;
+  height:100px;
+  position: relative;
 }
 
-.logout-item img{
-  width:30px;
-  height:auto;
+.footer-btn-wrap{
+  position: absolute;
+  right:0;
+  bottom: 30px;
+  z-index: 1;
 }
 
-.logout-item a{
-text-decoration: none;
+/*
+.footer-btn{
+	border: 1px solid #464646;
+	width: 160px;
+    font-size: 13px;
+    color: #989898;
+    margin:10px;
+    padding:10px;
+    height:64px;
+}
+*/
+.footer-wrap::after{
+    display: block;
+    position: absolute;
+    background-image: url(img/foo.png);
+    background-size: contain;
+    background-repeat: repeat;
+    content: "";
+    width: 90%;
+    height: 80px;
+    bottom: -20%;
+    left:0;
+    z-index:0;
+  }
+
+  .footer-btn{
+    width:160px;
+    font-size: 30px;
+    color: #989898;
+    margin:5px;
+    height:40px;
+    padding:5px;
+  }
+
+  .header-btn{
+    width:150px;
+    font-size: 20px;
+    color: #989898;
+    height:50px;
+    padding:10px;
+    position: absolute;
+    right:0;
+    z-index:1;
+    display:flex;
+    margin-right:5px;
+  }
+  
+  .fas{
+    margin-right: 5px;
+  }
+
+  .fab{
+    margin-right: 5px;
+  }
+
+/* テーブル */
+.center-table {
+  margin: 0 auto;
 }
 
+/* ボタン */
+.submit {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  line-height: 20px;
+  background-color: red;
+  color: #FFF;
+}
 
 
 .search-select{
 	color:white;
 	display:flex;
     justify-content:center;
-}
-
-.aa{
-  text-align:center; 
-  vertical-align:middle;
 }
 
 .footer-wrap{
@@ -245,56 +323,53 @@ text-decoration: none;
     color: #989898;
     margin:10px;
     padding:10px;
-    height:64px;
-}
-
-.submit {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-  line-height: 20px;
-  background-color: red;
-  color: #FFF;
+    height:50px;
 }
 
 
-.login-table {
-  margin: 0 auto;
+
+
+
+
+
+
+
+.sarch-input{
+	border: 1px solid #dbdbdb;
 }
 
-.footer-wrap{
-	background-color:#3d3a39;
-  position: relative;
+.footer-btn-wrap{
+  position: absolute;
+  right:0;
+  bottom: 30px;
+  z-index: 1;
+}
+
+.footer-img{
+  width:100px;
+  height:auto;
+  margin-bottom:-60px;
+  z-index:1;
+}
+
+.shere{
+width:300 px;
+      font-size: 20px;
+      color:white;
+      margin:10px;
+      padding:10px;
+      height:40px;
+}
+
+.twitter{
+  background-color: aqua;
+}
+
+.facebook{
+  background-color:blue;
+}
+
+.instagram{
+  background-color: orange;
+}
   
-
-}
-.footer-wrap::after{
-    display: block;
-    position: absolute;
-    background-image: url(img/foo.png);
-    background-size: contain;
-    background-repeat: repeat;
-    content: "";
-    width: 100%;
-    height: 100px;
-    bottom: -20%;
-    left:0;
-  }
-
-.icon{
-  width:200 px;
-    font-size: 20px;
-    color: #989898;
-    margin:10px;
-    padding:10px;
-    height:64px;
-
-}
-
-.fas{
-  margin-right: 5px;;
-}
-
-
