@@ -13,6 +13,17 @@
           <p><input type="radio" name="search" value="作品名">作品名</p>
           <p><input type="radio" name="search" value="著作者名">著作者名</p>
         </div>
+        <div class="selectdiv">
+          <label>
+              <select>
+                  <option selected> Select Box </option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Last long option</option>
+              </select>
+          </label>
+        </div>
+    
         <input class="book-search-input" type="text" name="keyword" placeholder="  書籍のタイトル、著作者名を入力してください">
         <input class="book-search-btn" type="submit" value="検索">
       </form>

@@ -1,5 +1,5 @@
 <%@page contentType="text/html; charset=UTF-8" %>
-<%@include file="../header.html" %>
+<%@include file="header.jsp" %>
 
 <%--メイン--%>
 <div class="top-wrap">
@@ -21,7 +21,7 @@
 </div>
 
 <div class="menu-wrap">
-  <div class="menu-var">
+  <div class="menu-bar">
   <form action="userSignUp.jsp" method="post">
     <input class="btn" type="submit" value="新規登録">
   </form>
@@ -41,19 +41,17 @@
 </div>
 
 <%--おすすめ--%>
-<div class="all-wrap">
-  <img src="../css/img/main-side.png" class="side-bar-left">
-  <img src="../css/img/right.png" class="side-bar-right">
+<div class="main-wrap">
 
   <h1 class="favorite-logo">Pick Up!!</h1>
   <div class="book-img-wrap">
-    <img src="../css/img/IMG1.jpg" class="book-img" alt="本の書籍">
-    <img src="../css/img/IMG_00011.jpg" class="book-img" alt="本の書籍">
-    <img src="../css/img/IMG_0003.jpg" class="book-img" alt="本の書籍">
-    <img src="../css/img/IMG_0003.jpg" class="book-img" alt="本の書籍">
-    <img src="../css/img/IMG_00011.jpg" class="book-img" alt="本の書籍">
-    <img src="../css/img/IMG_0003.jpg" class="book-img" alt="本の書籍">
+    <img src="./img/IMG1.jpg" class="book-img" alt="本の書籍">
+    <img src="./img/IMG_00011.jpg" class="book-img" alt="本の書籍">
+    <img src="./img/IMG_0003.jpg" class="book-img" alt="本の書籍">
+    <img src="./img/IMG_0003.jpg" class="book-img" alt="本の書籍">
+    <img src="./img/IMG_00011.jpg" class="book-img" alt="本の書籍">
+    <img src="./img/IMG_0003.jpg" class="book-img" alt="本の書籍">
   </div>
 </div>
 
-<%@include file="../footer.html" %>
+<%@include file="../footer.jsp" %>
